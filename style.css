@@ -1,210 +1,158 @@
-@charset "UTF-8";
-
-*{
+* {
     margin: 0;
     padding: 0;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap');
-
-@font-face {
-    font-family:'android';
-    src: url(fontes/idroid.otf) format('opentype');
-    font-weight: normal;
- }
-
-:root {
-    --cor1: #c5ebd6;
-    --cor2: #83e1ad;
-    --cor3: #3ddc84;
-    --cor4: #2fa866;
-    --cor5: #063d1e;
-
-    --fonte-padao: arial, verdana, helvetica, sans-serif;
-    --font-android: 'android',cursive;
-    --fonte-destaque: 'Merriweather Sans', sans-serif;
-    }
-
-header {
-    font-family: var(--fonte-destaque);
-    text-align: center;
-    color: white;
-    font-size: 1.3em;
-    background-image: linear-gradient(to bottom,#3ddc84, #063d1ec2);
-    padding: 50px;
-}
-
-header > h1 {
-    padding-bottom: 20px;
-    text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.445);
-}
-
-header > p {
-    text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.445);
-}
-
-nav {
-    background-color: #063d1ec2;
-    padding-bottom: 10px;
-    font-family: var(--fonte-destaque);
-    
-}
-
-nav > a {
-    text-decoration: none;
-    font-family: var(--fonte-padao);
-    font-weight: bold;
-    color: white;
-    padding: 10px;
-}
-nav > a:hover {
-    background-color: #2fa866;
-    color: #063d1e;
-    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.658);
-    padding: 10px;
-    border-radius: 0px 7px 0px 7px;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: #83e1ad;
- }
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    background-color: #303030; /* Cor de fundo */
+    color: #fff;
+    overflow-x: hidden;
+}
 
- main {
-    background-color: white;
-    min-width: 300px;
-    max-width: 1000px;
-    margin: auto;
-    padding: 12px;
-    margin-bottom: 30px;
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.582);
- }
-
- main img {
-    width: 100%;
-    margin: auto;
-    display: block;
-    padding-top: 7px;
-    padding-bottom: 7px;
- }
-
- img.pequena {
-    max-width: 350px;
-
- }
-
- div.video {
-   background-color: var(--cor5);
-   padding: 15px;
-   margin: 0px -12px 30px -12px;
-   position: relative;
-   padding-bottom: 56.2%;
- }
-
- div.video > iframe {
-   position: absolute;
-   top: 4%;
-   left: 4%;
-   width: 90%;
-   height: 90%;
- }
-
- article {
-    font-family: var(--fonte-padao);
-    text-align: justify;
- }
-
-  main  h1 {
-    font-family: var(--font-android);
-    font-weight: normal;
-    font-size: 2em;
-    color: #0b6432;
-    margin: 15px 0px 12px 8px;
- }
-
- 
- main  h2 {
-    font-family: var(--font-android);
-    font-weight: normal;
-    color: #0b6432;
-    font-size: 1.5em;
-    margin: 10px 0px 10px 0px;
-    background-image: linear-gradient(to right,#83e1ad,transparent);
- }
-
-
- aside {
-    background-color: var(--cor2);
-    border-radius: 10px;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.288);
-    
- }
-
- aside h3 {
-    background-color: #2fa866;
-    font-weight: bold;
+header {
+    background: linear-gradient(90deg, #000 0%, #FFA500 100%);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
     padding: 15px;
-    color: white;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
- }
+    text-align: center;
+}
 
- aside p {
-    padding: 10px;
+header h1 img, header h2 img {
+    max-width: 100%;
+    height: auto;
+}
 
- }
+.countdown-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Arial', sans-serif;
+}
 
- aside ul {
-    list-style-position: inside;
-    list-style-type: '\2714\00A0';
-    columns: 2;
-    padding: 5px; 
-     
- }
+.countdown-box {
+    flex: 1;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    margin: 10px;
+    color: #fff;
+    background: linear-gradient(45deg,  blue, #e07b00); /* Efeito degradê nas cores laranja e tom mais escuro de laranja */
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 25%; /* Ajusta conforme necessário para o layout desejado */
+}
 
-  main p {
-    margin: 15px 0px;
-    text-align: justify;
-    text-indent: 30px;
-    line-height: 2em;
-    font-size: 1em;
+.countdown-box span {
+    font-size: 35px; /* Tamanho do texto ajustável */
+    font-family: cursive;
+    display: block;
+}
 
- }
+@media screen and (max-width: 600px) {
+    .countdown-box span {
+        font-size: 15px;
+    }
+}
 
 
-main a {
+
+section {
+    padding: 40px 20px;
+    background-color: rgba(26, 26, 26, 0.658);
+    margin: 20px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+
+
+h1 {
+    color: #ff8c00; /* Laranja */
+    margin-bottom: 7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    line-height: 2;
+}
+
+
+
+a {
     text-decoration: none;
-    color: var(--cor5);
-    font-weight: bold;
-    background-color: var(--cor2);
-    padding: 0px 5px;
- }
+   color: white;
+}
 
+.botao {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff8c00; /* Cor laranja */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease; /* Transição de cor no hover */
+}
 
+.botao:hover {
+    background: linear-gradient(90deg, blue, orange); /* Cor mais escura no hover */
+    box-shadow: #e07b00 3px 1px 10px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
 
-main strong {
-color: var(--cor4);
-font-weight: bold;
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.camisetapreta {
+    display: inline;
+    place-items: center;
+    height: 50vh;
+    max-width: 100%;
+    margin-left: 250px;
+    margin-right: 50px; 
+}
+
+.camisetalaranja {
+    display: inline;
+    place-items: center;
+    height: 50vh;
+    max-width: 100%;
+    margin-left: 20px; 
+}
+
+.icone {
+    margin-right: 10px;
+    vertical-align: bottom  ;
 }
 
 footer {
-    font-family: var(--fonte-padao);
+    background-color: #e07b00; /* Cor de fundo do rodapé */
+    color: #fff;
     text-align: center;
-    background-color: #0b6432;
-    padding: 15px;
+    padding: 50px;
+    bottom: 0;
+    width: 100%;
 }
 
-footer a {
-   text-decoration: none;
-   font-family: var(--fonte-padao);
-   color: black;
-   line-height: 2em;
-}
-
-footer a:hover{
-   color: #2fa866;
+footer img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: -5px;
+   vertical-align: middle;
 }
